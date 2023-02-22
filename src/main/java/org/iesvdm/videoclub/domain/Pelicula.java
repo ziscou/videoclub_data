@@ -28,7 +28,9 @@ public class Pelicula {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id_pelicula")
     private long idPelicula;
+    @Column(name="titulo")
     private String titulo;
+    @Column(name= "descripcion")
     private String descripcion;
     @Column(name = "anyo_lanzamiento")
     @JsonFormat(pattern = "yyyy",  shape = JsonFormat.Shape.STRING)
